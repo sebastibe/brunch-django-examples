@@ -1,0 +1,9 @@
+*.pyc
+*.db
+*.elc
+*~
+*\#
+.\#*
+
+todos-example/frontend/node_modules
+todos-example/frontend/public
