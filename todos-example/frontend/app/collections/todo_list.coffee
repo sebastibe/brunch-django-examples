@@ -2,11 +2,8 @@
 
 
 class exports.TodoList extends Backbone.Collection
+  url: '/api/todos/'
   model: Todo
-  url: '/api/todos'
-
-  initialize: ->
-    @localStorage = new Store 'todos'
 
   done: ->
     @filter (todo) ->
