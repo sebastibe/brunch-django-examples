@@ -18,7 +18,7 @@ In a Python virtual environment:
     pip install -r requirements.txt
     
 In the `frontend` folder, once you have
-[brunch](https://github.com/brunch) 0.9.1 installed, you can install
+[brunch](https://github.com/brunch) 1.x installed, you can install
 dependencies to `node_modules` directory:
 
     npm install
