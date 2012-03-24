@@ -27,7 +27,7 @@ You will need [node.js](http://nodejs.org/) 0.6.10+.
 
 Install CoffeeScript if not done yet:
 
-    npm install -g coffeescript
+    npm install -g coffee-script
 
 Install Brunch:
 
