@@ -17,7 +17,7 @@ In a Python virtual environment:
 
     pip install -r requirements.txt
     
-    cd todos
+    cd todos-example
     python manage.py syncdb
     python manage.py runserver
 
