@@ -2,45 +2,51 @@
 
 ## Todos
 
-This is an adaptation of the official
-[Brunch Todos application](https://github.com/brunch/todos) using
-[Django](http://djangoproject.com) and
-[Django-rest-framework](http://django-rest-framework.org/) for the
-REST-API and data persistence.
+This is an integration of the [Brunch] + [Chaplin] Todo application found in [TodoMVC] with a backend using [Django] and [Django REST Framework].
 
-The credits for the original Todos application comes to
-[Jérôme Gravel-Niquet](http://jgn.me/).
+Once installed, the frontend is visible on http:127.0.0.1:8000 and the API is browsable on its endpoint http:127.0.0.1:8000/api/tasks/
 
-### Install and setup Django 1.3.1
+### Install Django 1.4.3 and Django Rest Framework 2.1.x
 
 In a Python virtual environment:
 
-    pip install -r requirements.txt
-    
-    cd todos-example
-    python manage.py syncdb
-    python manage.py runserver
+    $ pip install -r requirements.txt
+    $ cd todos-example
+    $ python manage.py syncdb
+    $ python manage.py runserver
 
-### Install and setup Brunch 1.0
+### Install Brunch 1.5
 
 You will need [node.js](http://nodejs.org/) 0.6.10+.
 
 Install CoffeeScript if not done yet:
 
-    npm install -g coffee-script
+    $ npm install -g coffee-script
 
-Install Brunch:
+Install [Brunch]:
 
-    npm install -g brunch
+    $ npm install -g brunch
 
-In the `frontend` folder, once you have
-[brunch](https://github.com/brunch) 1.x installed, you can install
-dependencies to `node_modules` directory:
+Then in the `chaplin-brunch` folder, to install dependencies execute:
 
-    npm install
+    $ npm install
     
 And build the project with:
 
-    brunch build
+    $ brunch build
 
-And you are good to go on http://127.0.0.1:8000
+or if you want to continiously rebuild the app:
+
+    $ brunch watch
+
+# Authors
+
+ * [@paulmillr](http://paulmillr.com) for the brunch-chaplin frontend.
+ * [@sebastibe](http://github.com/sebastibe) for Django integration.
+
+
+[Django]: http://djangoproject.com
+[Django REST Framework]: http://django-rest-framework.org/
+[Brunch]: http://brunch.io/
+[Chaplin]: https://github.com/chaplinjs/chaplin
+[TodoMVC]: https://github.com/addyosmani/todomvc

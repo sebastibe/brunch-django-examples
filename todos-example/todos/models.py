@@ -1,7 +1,10 @@
+# -*- coding: utf-8 -*-
+
 from django.db import models
 
 
-class Todo(models.Model):
-    content = models.CharField(max_length=200)
-    done = models.BooleanField(default=False)
-    order = models.IntegerField()
+class Task(models.Model):
+    title = models.CharField(max_length=200)
+    completed = models.BooleanField(default=False)
+    created = models.DateTimeField()
+    order = models.IntegerField(blank=True, null=True)

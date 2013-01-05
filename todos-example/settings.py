@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 # Django settings for todos-example project.
-import os
+import os.path
 
-PROJECT_ROOT = os.path.dirname(__file__)
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -31,6 +32,7 @@ DATABASES = {
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
 TIME_ZONE = 'America/Chicago'
+USE_TZ = True
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -49,10 +51,10 @@ USE_L10N = True
 MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
 ADMIN_MEDIA_PREFIX = '/static/admin/'
-MEDIA_ROOT = os.path.join(PROJECT_ROOT,'frontend/public/media')
+MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media')
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'frontend/public/static'),
+    os.path.join(PROJECT_ROOT, 'chaplin-brunch', 'public'),
 )
 
 # List of finder classes that know how to find static files in
@@ -84,7 +86,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'urls'
 
 TEMPLATE_DIRS = (
-  os.path.join(PROJECT_ROOT, "frontend/public/templates"),
+  os.path.join(PROJECT_ROOT, 'chaplin-brunch', 'public'),
 )
 
 INSTALLED_APPS = (
@@ -97,7 +99,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
 
     # external
-    'djangorestframework',
+    'rest_framework',
 
     # internal
     'todos',

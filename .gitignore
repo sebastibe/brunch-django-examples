@@ -5,5 +5,9 @@
 *\#
 .\#*
 
-todos-example/frontend/node_modules
-todos-example/frontend/public
+# NPM packages folder.
+node_modules/
+
+# Brunch folder for temporary files.
+tmp/
+public/
