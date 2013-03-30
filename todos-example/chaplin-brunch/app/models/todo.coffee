@@ -1,7 +1,7 @@
 Model = require 'models/base/model'
 
 module.exports = class Todo extends Model
-  idAttribute: 'pk'
+  idAttribute: 'id'
 
   defaults:
     title: ''
