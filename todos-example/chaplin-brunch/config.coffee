@@ -13,9 +13,10 @@ exports.config =
         before: [
           'vendor/scripts/console-helper.js',
           'vendor/scripts/jquery-1.9.1.js',
-          'vendor/scripts/underscore-1.4.4.js',
+          'vendor/scripts/lodash-1.1.1.js',
           'vendor/scripts/backbone-1.0.0.js',
           'vendor/scripts/chaplin-0.8.0.js'
+          'vendor/scripts/handlebars-1.0.10.js'
         ]
 
     stylesheets:
@@ -23,8 +24,8 @@ exports.config =
         'stylesheets/app.css': /^(app|vendor)/
         'test/stylesheets/test.css': /^test/
       order:
-        before: ['vendor/styles/normalize-2.0.1.css']
-        after: ['vendor/styles/helpers.css']
+        before: ['vendor/styles/normalize-2.1.0.css']
+        after: ['styles/base.css']
 
     templates:
       joinTo: 'javascripts/app.js'
