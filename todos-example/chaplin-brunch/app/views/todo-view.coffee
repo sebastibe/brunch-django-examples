@@ -7,7 +7,7 @@ module.exports = class TodoView extends View
 
   initialize: ->
     super
-    @modelBind 'change', @render
+    @listenTo @model, 'change', @render
     @delegate 'click', '.destroy', @destroy
     @delegate 'dblclick', 'label', @edit
     @delegate 'keypress', '.edit', @save

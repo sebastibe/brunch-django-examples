@@ -11,7 +11,7 @@ module.exports = class TodosView extends CollectionView
   initialize: ->
     super
     @subscribeEvent 'todos:clear', @clear
-    @modelBind 'all', @renderCheckbox
+    @listenTo @collection, 'all', @renderCheckbox
     @delegate 'click', '#toggle-all', @toggleCompleted
 
   render: =>

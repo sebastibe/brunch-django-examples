@@ -9,7 +9,7 @@ module.exports = class FooterView extends View
   initialize: ->
     super
     @subscribeEvent 'todos:filter', @updateFilterer
-    @modelBind 'all', @renderCounter
+    @listenTo @collection, 'all', @renderCounter
     @delegate 'click', '#clear-completed', @clearCompleted
 
   render: =>
