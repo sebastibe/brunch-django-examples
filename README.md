@@ -4,7 +4,7 @@
 
 This is an integration of the [Brunch] + [Chaplin] Todo application found in [TodoMVC] with a backend using [Django] and [Django REST Framework].
 
-Once installed, the frontend is visible on http:127.0.0.1:8000 and the API is browsable on its endpoint http:127.0.0.1:8000/api/tasks/
+Once installed, the frontend is visible on http://127.0.0.1:8000/ and the API is browsable on its endpoint http://127.0.0.1:8000/api/tasks/
 
 ### Install Django 1.3.5+ and Django Rest Framework 2.2.5+
 
